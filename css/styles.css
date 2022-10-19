@@ -28,7 +28,23 @@ body {
   font-style: var(--font-style);
 }
 /* -------------HEADER------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header__container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 215px;
+}
 
+.nav__group {
+  display: flex;
+  gap: 46px;
+}
 .nav__link {
   color: var(--text-color);
   font-weight: 500;
@@ -38,6 +54,11 @@ body {
 .nav__link:focus,
 .nav__link:active {
   color: var(--primary-color);
+}
+
+.contact {
+  display: flex;
+  gap: 50px;
 }
 .contact__date {
   color: var(--fourth-color);
@@ -52,6 +73,8 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  display: flex;
+  align-items: center;
 }
 
 .logo__header--first {
@@ -68,15 +91,31 @@ body {
 }
 
 /* -------------FOOTER------------- */
+.footer {
+  background-color: var(--background-color-second);
+  height: 252px;
+}
+.footer__container {
+  width: 1200px;
+  margin: 0px 215px;
+  padding-top: 60px;
+}
 .footer__address {
   color: var(--third-color);
   line-height: 1.71;
+  padding-top: 20px;
+}
+.footer__list {
+  padding: 0px;
+}
+.footer__list li {
+  padding-bottom: 9px;
 }
 .footer__contact {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__contact:hover,
-footer__contact:active,
+.footer__contact:active,
 .footer__contact:focus {
   color: var(--primary-color);
 }
@@ -85,6 +124,16 @@ footer__contact:active,
 
 .slider {
   background-color: var(--background-color-second);
+  height: 600px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.slider__container {
+  width: 1200px;
+  margin: 0px 215px;
 }
 .slider__btn {
   cursor: pointer;
@@ -104,38 +153,106 @@ footer__contact:active,
   color: var(--third-color);
   font-weight: 900;
   line-height: 1.36;
+  margin: 0px;
+  margin-bottom: 40px;
 }
 
 /* -------------ARTICLE------------- */
+.article {
+  margin-bottom: 94px;
+}
+.article__group {
+  display: flex;
+  padding: 0px;
+}
+.article__container {
+  width: 1200px;
+  margin: 0px 215px;
+}
 .article__title {
   font-weight: 700;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 .article__text {
   color: var(--fourth-color);
+  margin: 0px;
 }
 
 /* -------------RESPONSIBILITIES------------- */
+.responsibilities {
+  margin-bottom: 94px;
+}
+.responsibilities__container {
+  width: 1200px;
+  margin: 0px 215px;
+}
 .title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 50px;
 }
-/* -------------RESPONSIBILITIES------------- */
 
+.responsibilities__list {
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+}
+
+/* -------------PERSONEL------------- */
+.personel {
+  background-color: var(--secondary-color);
+}
+
+.personel__container {
+  width: 1200px;
+  margin: 0px 215px;
+  padding-top: 94px;
+}
+
+.personel__list {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.personel__list li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--third-color);
+  padding-bottom: 30px;
+}
 .personel__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .personel__body {
   font-size: 16px;
   color: var(--fourth-color);
   line-height: 1.18;
+  text-align: center;
 }
 
 /* -------------FILTERS------------- */
+.filters {
+}
 
+.filters__container {
+  width: 1200px;
+  margin: 94px 215px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 .filters__btn {
   cursor: pointer;
   background-color: var(--secondary-color);
@@ -153,18 +270,34 @@ footer__contact:active,
 }
 
 /* -------------CARDS------------- */
+
+.cards__container {
+  width: 1200px;
+  margin: 0px 215px;
+  padding-bottom: 94px;
+}
+.cards__list {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 30px;
+}
+.cards__list li {
+  background: var(--third-color);
+  border: 1px solid #eeeeee;
+}
+
 .card__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 20px 0px 4px 24px;
 }
 .card__text {
   font-size: 16px;
   color: var(--fourth-color);
   line-height: 1.87;
-}
-
-.footer {
-  background-color: var(--background-color-second);
+  margin: 0px 0px 20px 24px;
 }

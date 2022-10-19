@@ -21,7 +21,7 @@
           ><span class="logo__header--second">Studio</span></a
         >
         <nav class="nav">
-          <ul>
+          <ul class="nav__group">
             <li><a class="nav__link" href="#">Agencja</a></li>
             <li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
             <li><a class="nav__link" href="#">Kontakt</a></li>
@@ -29,8 +29,14 @@
         </nav>
 
         <ul class="contact">
-          <li class="contact__date">info@devstudio.com</li>
-          <li class="contact__date">+48 111 111 111</li>
+          <li>
+            <a href="mailto:info@devistudio.com" class="contact__date"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+48111111111" class="contact__date">+48 111 111 111</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -46,10 +52,10 @@
         </div>
       </section>
 
-      <!-- ------------LOREM-------------- -->
+      <!-- ------------ARTICLE-------------- -->
       <section class="article">
         <div class="article__container">
-          <ul>
+          <ul class="article__group">
             <li>
               <h3 class="article__title">LOREM IPSUM</h3>
               <p class="article__text">
@@ -86,7 +92,7 @@
       <section class="responsibilities">
         <div class="responsibilities__container">
           <h2 class="title">Czym się zajmujemy</h2>
-          <ul>
+          <ul class="responsibilities__list">
             <li>
               <img
                 src="./images/photo1.jpg"
@@ -118,7 +124,7 @@
       <section class="personel">
         <div class="personel__container">
           <h2 class="title">Nasz zespół</h2>
-          <ul>
+          <ul class="personel__list">
             <li>
               <img
                 src="./images/johndoe.jpg"
@@ -172,10 +178,18 @@
           ><span class="logo__footer--second">Studio</span></a
         >
         <address class="footer__address">
-          <ul>
+          <ul class="footer__list">
             <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="footer__contact">info@example.com</li>
-            <li class="footer__contact">+48 111 111 111</li>
+            <li>
+              <a href="mailto:info@example.com" class="footer__contact"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="footer__contact"
+                >+48 111 111 111</a
+              >
+            </li>
           </ul>
         </address>
       </div>
