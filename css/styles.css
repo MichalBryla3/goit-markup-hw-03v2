@@ -33,22 +33,34 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header__container {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin: 0px 215px;
+}
+
+.header__container--left {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto 0 0;
+}
+.header__container--right {
+  margin: 0 0 auto 0;
 }
 
 .nav__group {
   display: flex;
-  gap: 46px;
+  padding-left: 93px;
 }
 .nav__link {
   color: var(--text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding: 16px;
+  margin: 4px;
 }
 .nav__link:hover,
 .nav__link:focus,
@@ -58,10 +70,11 @@ body {
 
 .contact {
   display: flex;
-  gap: 50px;
 }
 .contact__date {
   color: var(--fourth-color);
+  padding: 16px;
+  margin: 4px;
 }
 .contact__date:hover,
 .contact__date:focus,
@@ -94,6 +107,8 @@ body {
 .footer {
   background-color: var(--background-color-second);
   height: 252px;
+  display: flex;
+  justify-content: center;
 }
 .footer__container {
   width: 1200px;
@@ -128,6 +143,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 94px;
 }
 
@@ -160,6 +176,8 @@ body {
 /* -------------ARTICLE------------- */
 .article {
   margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
 }
 .article__group {
   display: flex;
@@ -182,6 +200,8 @@ body {
 /* -------------RESPONSIBILITIES------------- */
 .responsibilities {
   margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
 }
 .responsibilities__container {
   width: 1200px;
@@ -205,6 +225,8 @@ body {
 /* -------------PERSONEL------------- */
 .personel {
   background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
 }
 
 .personel__container {
@@ -243,7 +265,10 @@ body {
 }
 
 /* -------------FILTERS------------- */
-
+.filters {
+  display: flex;
+  justify-content: center;
+}
 .filters__container {
   width: 1200px;
   margin: 94px 215px 50px;
@@ -268,7 +293,10 @@ body {
 }
 
 /* -------------CARDS------------- */
-
+.cards {
+  display: flex;
+  justify-content: center;
+}
 .cards__container {
   width: 1200px;
   margin: 0px 215px;
@@ -278,7 +306,7 @@ body {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
   row-gap: 30px;
 }
 .cards__list li {
